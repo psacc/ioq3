@@ -11,6 +11,7 @@ notifications:
 jobs:
   include:
     - os: osx
+      osx_image: xcode11.3
       script: ./make-macosx.sh x86_64
     - os: linux
       # sudo is required for travis-ci to use ubuntu trusty
